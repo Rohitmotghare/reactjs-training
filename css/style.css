@@ -1,0 +1,37 @@
+.navbar-main {
+    background-color: rgb(13, 95, 247);
+}
+
+body,
+button {
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --offcanvas-width: 270px;
+    --topNavbarHeight: 56px;
+}
+
+.sidebar-nav{
+    width: var(--offcanvas-width);
+}
+
+@media (min-width: 992px) {
+
+    .offcanvas-backdrop::before{
+        display: none;
+    }
+    main{
+        margin-left: var(--offcanvas-width) ;
+    }
+    .sidebar-nav {
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100%--topNavbarHeight);
+    }   
+}
+.bg-grey {
+    background-color: rgb(235, 229, 229);
+}
+ 
